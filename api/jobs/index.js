@@ -13,11 +13,11 @@ var router = express.Router();
 
 router.post("/",isAdmin(),controller.create())
 
-router.post("/update",controller.update())
+router.post("/update",isAdmin(),controller.update())
 
 function isAdmin()
 {
-
+  
 }
 
 module.exports= router;
