@@ -21,6 +21,7 @@ var UserSchema = new Schema({
         lowercase:true,
         type:String
     },
+    Role: String,
     salt:String,
     hashedPassword: String,
     email:{
